@@ -1,0 +1,19 @@
+module tp {
+
+	module location{
+		interface Location{
+		attribute long d;
+		
+		oneway void louer();	
+		};
+	};
+	
+	module restitution{
+		interface Restitution{
+		attribute long r;
+		readonly attribute long n;
+		
+		oneway void restituer();
+	}; 
+	};
+};
